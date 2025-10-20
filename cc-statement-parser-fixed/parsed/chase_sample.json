@@ -1,0 +1,95 @@
+{
+  "issuer": {
+    "value": "Chase",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "provider",
+        "snippet": "Chase",
+        "score": 1.0
+      }
+    ]
+  },
+  "card_last4": {
+    "value": "1234",
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:last4",
+        "snippet": "Account Ending 1234",
+        "score": 1.0
+      }
+    ]
+  },
+  "billing_start": {
+    "value": "2025-10-01",
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:cycle",
+        "snippet": "Statement Period: Oct 01, 2025 to Oct 30, 2025",
+        "score": 1.0
+      }
+    ]
+  },
+  "billing_end": {
+    "value": "2025-10-30",
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:cycle",
+        "snippet": "Statement Period: Oct 01, 2025 to Oct 30, 2025",
+        "score": 1.0
+      }
+    ]
+  },
+  "due_date": {
+    "value": "2025-10-25",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:due",
+        "snippet": "Payment Due Date: Oct 25, 2025",
+        "score": 1.0
+      }
+    ]
+  },
+  "statement_balance": {
+    "value": "1520.40",
+    "confidence": 0.9,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:balance",
+        "snippet": "Statement Balance: $1,520.40",
+        "score": 1.0
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "date": "2025-10-02",
+      "description": "APP SUBSCRIPTION",
+      "amount": 38.44
+    },
+    {
+      "date": "2025-10-12",
+      "description": "BOOKS",
+      "amount": 34.66
+    },
+    {
+      "date": "2025-10-23",
+      "description": "GROCERY MART",
+      "amount": 6.57
+    }
+  ],
+  "meta": {
+    "provider": "Chase",
+    "pages": 1
+  }
+}

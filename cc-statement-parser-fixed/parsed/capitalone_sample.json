@@ -1,0 +1,115 @@
+{
+  "issuer": {
+    "value": "Capital One",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "provider",
+        "snippet": "Capital One",
+        "score": 1.0
+      }
+    ]
+  },
+  "card_last4": {
+    "value": "3456",
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:last4",
+        "snippet": "Account Ending 3456",
+        "score": 1.0
+      }
+    ]
+  },
+  "billing_start": {
+    "value": "2025-10-01",
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:cycle",
+        "snippet": "Statement Period: Oct 01, 2025 to Oct 30, 2025",
+        "score": 1.0
+      }
+    ]
+  },
+  "billing_end": {
+    "value": "2025-10-30",
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:cycle",
+        "snippet": "Statement Period: Oct 01, 2025 to Oct 30, 2025",
+        "score": 1.0
+      }
+    ]
+  },
+  "due_date": {
+    "value": "2025-10-25",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:due",
+        "snippet": "Payment Due Date: Oct 25, 2025",
+        "score": 1.0
+      }
+    ]
+  },
+  "statement_balance": {
+    "value": "773.39",
+    "confidence": 0.9,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:balance",
+        "snippet": "Statement Balance: $773.39",
+        "score": 1.0
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "date": "2025-10-07",
+      "description": "BOOKS",
+      "amount": 15.27
+    },
+    {
+      "date": "2025-10-16",
+      "description": "APP SUBSCRIPTION",
+      "amount": 82.16
+    },
+    {
+      "date": "2025-10-16",
+      "description": "FUEL STATION",
+      "amount": 83.36
+    },
+    {
+      "date": "2025-10-04",
+      "description": "APP SUBSCRIPTION",
+      "amount": 86.68
+    },
+    {
+      "date": "2025-10-14",
+      "description": "COFFEE SHOP",
+      "amount": 92.74
+    },
+    {
+      "date": "2025-10-27",
+      "description": "APP SUBSCRIPTION",
+      "amount": 93.79
+    },
+    {
+      "date": "2025-10-17",
+      "description": "GROCERY MART",
+      "amount": 7.52
+    }
+  ],
+  "meta": {
+    "provider": "Capital One",
+    "pages": 1
+  }
+}

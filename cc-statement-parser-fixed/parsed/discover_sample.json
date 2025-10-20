@@ -1,0 +1,110 @@
+{
+  "issuer": {
+    "value": "Discover",
+    "confidence": 0.95,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "provider",
+        "snippet": "Discover",
+        "score": 1.0
+      }
+    ]
+  },
+  "card_last4": {
+    "value": "7890",
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:last4",
+        "snippet": "Account Ending 7890",
+        "score": 1.0
+      }
+    ]
+  },
+  "billing_start": {
+    "value": "2025-10-01",
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:cycle",
+        "snippet": "Statement Period: Oct 01, 2025 to Oct 30, 2025",
+        "score": 1.0
+      }
+    ]
+  },
+  "billing_end": {
+    "value": "2025-10-30",
+    "confidence": 0.8,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:cycle",
+        "snippet": "Statement Period: Oct 01, 2025 to Oct 30, 2025",
+        "score": 1.0
+      }
+    ]
+  },
+  "due_date": {
+    "value": "2025-10-25",
+    "confidence": 0.85,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:due",
+        "snippet": "Payment Due Date: Oct 25, 2025",
+        "score": 1.0
+      }
+    ]
+  },
+  "statement_balance": {
+    "value": "1666.41",
+    "confidence": 0.9,
+    "evidence": [
+      {
+        "page": 0,
+        "method": "regex:balance",
+        "snippet": "Statement Balance: $1,666.41",
+        "score": 1.0
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "date": "2025-10-09",
+      "description": "BOOKS",
+      "amount": 18.37
+    },
+    {
+      "date": "2025-10-16",
+      "description": "APP SUBSCRIPTION",
+      "amount": 16.37
+    },
+    {
+      "date": "2025-10-25",
+      "description": "APP SUBSCRIPTION",
+      "amount": 89.4
+    },
+    {
+      "date": "2025-10-28",
+      "description": "FUEL STATION",
+      "amount": 68.8
+    },
+    {
+      "date": "2025-10-17",
+      "description": "COFFEE SHOP",
+      "amount": 66.11
+    },
+    {
+      "date": "2025-10-29",
+      "description": "FUEL STATION",
+      "amount": 19.53
+    }
+  ],
+  "meta": {
+    "provider": "Discover",
+    "pages": 1
+  }
+}
